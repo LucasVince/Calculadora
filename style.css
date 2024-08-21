@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* user-select: none; */
+}
+
+body {
+    background-color: #808080;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: #181818;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#titulo {
+    color: white;
+}
+
+#expressão {
+    text-align: right;
+    color: #505050;
+    height: 18px;
+    padding: 0 15px;
+}
+
+#resultado {
+    color: white;
+    font-size: 50pt;
+    text-align: right;
+    height: 90px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#resultado:active {
+    background-color: #222222;
+}
+
+#numeros {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+section > button {
+    background-color: #505050;
+    height: 55px;
+    width: 80px;
+    margin: 1px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.125s;
+}
+
+.op {
+    background-color: #303030;
+}
+
+.op:hover {
+    background-color: #505050;
+}
+
+section > button:hover {
+    background-color: #303030;
+}
+
+#igual {
+    grid-column: 3 / 5;
+    width: auto;
+    background-color: #528cce;
+}
+
+#igual:hover {
+    background-color: #4170a7;
+}
